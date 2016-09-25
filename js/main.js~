@@ -1,0 +1,17 @@
+
+$(".mobile-menu").click(function(){
+    var $S = 1;
+    var $navlink = ".navlink-m-" + $S;
+    function addshow(){
+	alert("ntm");
+
+	alert($navlink);
+    }
+    for ($S = 1; $S <= 4; $S++){
+
+	$navlink = "navlink-m-" + $S;
+	var w = setInterval($($navlink).addClass("show"), 1000);
+	alert($navlink);
+    }
+
+});
