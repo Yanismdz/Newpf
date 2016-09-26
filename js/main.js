@@ -26,12 +26,14 @@ $(window).scroll(function(){
 	$(".description img").addClass("fadein");
 	$(".description p").addClass("fadein");
     }
-    if(scrolledFromtop > projet.top)
+    if(scrolledFromtop > projet.top -150 )
     {
 	$(".background-img").attr("src", "img/bg3.jpg");
+	$(".background-img").removeClass("filter");	
     }
     else{
 	$(".background-img").attr("src", "img/1846.jpg");
+	$(".background-img").addClass("filter");
     }
     if(scrolledFromtop > (qui.top -45) && scrolledFromtop < (projet.top - 45))
     {
